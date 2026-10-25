@@ -1,0 +1,115 @@
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    text-align: center;
+
+  }
+  
+  /* Heading */
+  .contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  /* Container that holds form and info side by side */
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap; 
+    /* flex-wrap to allow responsive stacking on smaller screens */
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    flex: 1 1 400px;  /* allow it to shrink/grow, min 400px */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form labels */
+  .contact-form label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  /* Form inputs */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form select,.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #3e3e3e;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  
+  /* Submit button */
+  .contact-form button {
+    padding: 14px;
+    background-color: #f2c300; /* a highlight color, adjust as needed */
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Contact info side */
+  .contact-info {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 200px;
+    padding-top: 50px;
+  }
+  
+  /* Address styles */
+  .contact-info .address {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Branch list */
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+  }
+  
+  /* Email style */
+  .contact-info .email {
+    margin-top: 10px;
+  }
+  .lii{
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-info {
+      align-items: center;
+      text-align: center;
+    }
+  }
